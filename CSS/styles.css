@@ -1,0 +1,77 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #76c4c6;
+}
+
+.dots {
+  width: 300px;
+  justify-content: space-around;
+  display: flex;
+  animation: DotsAnimation 1s infinite ease-in-out;
+  margin-bottom: 400px;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@keyframes DotsAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.lines {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.line {
+  width: 30px;
+  height: 100px;
+  background-color: white;
+  animation: LinesAnimation 1s infinite ease-in-out;
+}
+
+@keyframes LinesAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.line:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.line:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.line:nth-child(5) {
+  animation-delay: 0.4s;
+}
